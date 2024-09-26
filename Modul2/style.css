@@ -1,0 +1,91 @@
+@import url('https://fonts.cdnfonts.com/css/nexa-bold');
+.dealerForm.module-full-container .Container.WFULL .wrapper {position: relative;}
+.dealerForm.module-full-container .Container.WFULL .wrapper .container .left {background-color: #1F272D;width:37%;height: 100%;padding:58px 44px 20px 70px;position: fixed;left: 0px;top: 0px;bottom: 0px;}
+body{
+    font-family: 'Nexa', sans-serif;
+}
+.owl-carousel {
+    display: flex;
+    overflow: hidden;
+}
+.owl-stage {
+    display: flex;
+    white-space: nowrap;
+}
+.owl-item {
+    flex: 0 0 auto;
+    width: 200px;
+}
+.owl-carousel .owl-stage {
+    display: flex;
+    animation: scroll 10s linear infinite; 
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.Container.WFULL{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+p{
+    text-align: left;
+    font: normal normal normal 24px/34px Nexa;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    pointer-events: none;
+    user-select: none;
+}
+.middletittle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.middletittle p {
+    text-align: left;
+    font: normal normal 900 40px / 56px Nexa;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    width: 100%;
+    padding: 100px;
+
+}
+.middletittlecont{
+    z-index: 2;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 55%, rgba(255, 255, 255, 0) 100%);
+}
+.ticker-item{
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden
+}
+.item-list{
+    width: 500000px;
+    animation: moveSlideshow 10s linear infinite;
+    width: 30000px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+@keyframes moveSlideshow {
+    100% {
+        transform: translateX(-1600px)
+    }
+}
+.item p{
+    margin: 0 40px;
+}

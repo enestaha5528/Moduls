@@ -1,0 +1,121 @@
+.dealerForm.module-full-container .Container.WFULL .wrapper {position: relative;}
+.dealerForm.module-full-container .Container.WFULL .wrapper .container .left {background-color: #1F272D;width:37%;height: 100%;padding:58px 44px 20px 70px;position: fixed;left: 0px;top: 0px;bottom: 0px;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    font-family: "Apercupro" !important;
+    font-size: 25px;
+}
+/* Her item arasına çizgi eklemek için */
+.owl-carousel .item::before {
+    content: "";
+    display: block;
+    width: 100%; /* Çizginin genişliği */
+    height: 2px; /* Çizginin yüksekliği */
+    background-color: black; /* Çizginin rengi */
+    position: absolute;
+    bottom: -10px; /* Çizginin item'dan uzaklığı */
+}
+
+/* Ortadaki item için çizgiyi kaldır */
+.owl-carousel .owl-item.ortaeleman .item::before {
+    display: none;
+}
+
+/* Sol tarafa bir çizgi ekle */
+.owl-carousel .item::before {
+    left: -30px; /* Çizginin item'dan uzaklığı */
+}
+
+/* Sağ tarafa bir çizgi ekle */
+.owl-carousel .item::after {
+    right: -30px; /* Çizginin item'dan uzaklığı */
+}
+
+/* Ortadaki item için çizgiyi kaldır */
+.owl-carousel .owl-item.ortaeleman .item::before,
+.owl-carousel .owl-item.ortaeleman .item::after {
+    display: none;
+}
+
+
+.owl-carousel .owl-item {
+    padding: 0; /* Boşlukları sıfırla */
+    margin: 0;  /* Boşlukları sıfırla */
+    border-bottom: 2px solid black; /* Yatay çizgiyi altına ekle */
+    display: inline-block;
+    vertical-align: top;
+    text-align: center; /* İçerik ortalama */
+    width: 150px; /* Öğenin genişliğini sabitle */
+}
+
+.owl-carousel .owl-item:last-child {
+    border-bottom: none; /* Son öğede çizgiyi kaldır */
+}
+
+/* Genel sıfırlama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.owl-carousel {
+    padding: 0;
+    margin: 0;
+}
+
+.owl-stage {
+    display: flex;
+    justify-content: space-between; /* Öğeler arasındaki boşlukları kaldır */
+}
+
+.owl-stage-outer {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.Container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.site{
+    display: flex;
+}
+.left{
+    width: 50%;
+    height: 100vh;
+    background-color: #1F272D;
+}
+.right{
+    width: 50%;
+    height: 100vh;
+    background-color: aqua;
+}
+.img{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+.img img{
+max-width: 240px;
+}
+p{
+    font: normal normal medium 25px/30px Apercu Pro;
+}
+img{
+    -webkit-user-drag: none;
+}
